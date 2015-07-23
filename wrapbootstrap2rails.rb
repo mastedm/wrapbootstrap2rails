@@ -20,8 +20,7 @@ class Wrapbootstrap2rails
     copy_r 'plugins', 'plugins'
     
     [ 'javascripts', 'stylesheets', 'images' ].each do |dir|
-      FileUtils.ln_s File.join(@dst_assets,      'plugins'),
-                     File.join(@dst_assets, dir, 'plugins')
+      `cd #{File.join(@dst_assets, dir)}; ln -s ../plugins plugins`
     end
   end
   
