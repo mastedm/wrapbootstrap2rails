@@ -1,5 +1,5 @@
 # Wrapbootstrap2rails
-Correct copy WrapBootstrap to Rails project
+Correct copy WrapBootstrap template to Rails project
 
 
 ## Usage
